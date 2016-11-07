@@ -1,0 +1,8 @@
+CREATE DATABASE emotionscount;
+
+database created in PHPAdmin via cPanel
+teamname_[database name]
+
+sigmagam_emotionscount
+
+
