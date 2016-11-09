@@ -1,0 +1,72 @@
+/*
+ * Globals
+ */
+
+body {
+  font-size: medium;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h2, h3{
+  color: #4F81BD;
+}
+h4{
+  margin-left: 1em;
+  font-weight: 3em;
+}
+
+img{
+  max-width: 500px;
+  height: auto;
+}
+
+li, img{
+  padding-bottom: 1em;
+}
+
+p{
+  margin-left: 1em;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+#pageBar{
+  margin: 0 -15px 15px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+#pageBar li{
+  list-style: none;
+  margin-bottom: .5em;
+}
+
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
