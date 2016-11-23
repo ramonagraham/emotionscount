@@ -41,22 +41,16 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    font-size:14px;
     position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    left:5%;
+    top: 5%;
+
 }
 
 /* Landscape layout (with min-width) */
@@ -114,12 +108,41 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.hidden
-{
-    display: none;
+/* CUSTOM CSS */
+.menu {
+    font-size: medium;
+    float:left;
+    padding-bottom: 15px;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.error
-{
-    color: red;
+.currentPage {
+    border-bottom: 3px solid purple;
+    text-decoration:bold;
 }
+
+.welcome {
+    font-size: large;
+    color: #404040;
+    text-decoration:bold;
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+#questions li {
+    padding-bottom: 15px;
+}
+
+#answers li {
+    list-style-type: none;
+}
+
+
+    

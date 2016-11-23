@@ -14,71 +14,82 @@
           * Enable eval(): add 'unsafe-eval' to default-src
       * Create your own at http://cspisawesome.com
       -->
-      <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->			<title>Emotions Count</title>
-      <link rel="stylesheet" type="text" href="css/screener.css">      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+			<title>Emotions Count</title>
+			<link rel="stylesheet" type="text/css" href="css/screener.css">
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body>
       <div class="app">
-<!--        <form id="screener">
-					<input type="radio" name="Q1" value="Bad">
-					<input type="radio" name="Q1" value="Good">
-					<p id="error1" class="hidden error">Please provide an answer to this question!</p>
-					<input type="radio" name="Q2" value="Bad">
-					<input type="radio" name="Q2" value="Good">
-					<p id="error2" class="hidden error">Please provide an answer to this question!</p>
-					<input type="radio" name="Q3" value="Bad">					<input type="radio" name="Q3" value="Good">					<p id="error3" class="hidden error">Please provide an answer to this question!</p>					
-					<input type="submit" name="submit" value="Submit">
-				</form>-->
+				<div class = "menu">
+					<a href = "index.html">Home</a> |
+					<a href = "#">Welcome</a> |
+					<a href = "screener.html" class = "currentPage">Survey</a> |
+					<A href = "resources.html">Resources</a>
+				</div>
+				
+				<br><br>
 
 				<form method = "POST" action = "#" id = "screener">
-					<ol>
+					<ol id = "questions">
 						<li>Have you ever been bullied at school?</li>
-								<input type = "radio" name = "Q1" value = "never">Never</input>
-								<input type = "radio" name = "Q1" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q1" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q1" value = "often">Often</input>
-								<input type = "radio" name = "Q1" value = "always">Always</input>
-							
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q1" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q1" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q1" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q1" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q1" value = "always">Always</input></li>
+							</ul>
 								
 						<li>Does your family help you with problems you have at school?</li>
-								<input type = "radio" name = "Q2" value = "never">Never</input>
-								<input type = "radio" name = "Q2" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q2" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q2" value = "often">Often</input>
-								<input type = "radio" name = "Q2" value = "always">Always</input>
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q2" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q2" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q2" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q2" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q2" value = "always">Always</input></li>
+							</ul>
 								
 						<li>Do you get the help you need from staff, teachers, or counselors at school?</li>
-								<input type = "radio" name = "Q3" value = "never">Never</input>
-								<input type = "radio" name = "Q3" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q3" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q3" value = "often">Often</input>
-								<input type = "radio" name = "Q3" value = "always">Always</input>
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q3" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q3" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q3" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q3" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q3" value = "always">Always</input></li>
+							</ul>
 								
 						<li>Do your friends help and support you with problems you have?</li>
-								<input type = "radio" name = "Q4" value = "never">Never</input>
-								<input type = "radio" name = "Q4" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q4" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q4" value = "often">Often</input>
-								<input type = "radio" name = "Q4" value = "always">Always</input>
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q4" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q4" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q4" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q4" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q4" value = "always">Always</input></li>
+							</ul>
 								
 						<li>Is there anything that has happened in the classroom, on the bus, at home
 								or anywhere else that has been bothering you? Please share below.</li>
 								<!--<input type = "textarea" name = "Q5"></textarea>-->
-								<input type = "radio" name = "Q5" value = "never">Never</input>
-								<input type = "radio" name = "Q5" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q5" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q5" value = "often">Often</input>
-								<input type = "radio" name = "Q5" value = "always">Always</input>
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q5" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q5" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q5" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q5" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q5" value = "always">Always</input></li>
+							</ul>
 								
 						<li>Is there anything exciting or that has made you happy that you would like to
 								share today?</li>
 								<!--<input type = "textarea" name = "Q6" id = "textarea" colspan = "5"></textarea>-->
-								<input type = "radio" name = "Q6" value = "never">Never</input>
-								<input type = "radio" name = "Q6" value = "rarely">Rarely</input>
-								<input type = "radio" name = "Q6" value = "sometimes">Sometimes</input>
-								<input type = "radio" name = "Q6" value = "often">Often</input>
-								<input type = "radio" name = "Q6" value = "always">Always</input>
+							<ul id = "answers">
+								<li><input type = "radio" name = "Q6" value = "never">Never</input></li>
+								<li><input type = "radio" name = "Q6" value = "rarely">Rarely</input></li>
+								<li><input type = "radio" name = "Q6" value = "sometimes">Sometimes</input></li>
+								<li><input type = "radio" name = "Q6" value = "often">Often</input></li>
+								<li><input type = "radio" name = "Q6" value = "always">Always</input></li>
+							</ul>
 					</ol>
 					
 					<input type="submit" name="submit" value="Submit">
