@@ -3,9 +3,9 @@ USE sigmagam_emotionscount;
 CREATE TABLE screener
 (
 	screenerId INT AUTO_INCREMENT,
-    studentId2 CHAR(7),
-	questionId2 CHAR(7),
-    answerId2 CHAR(7),
-	dateEntered DATETIME,
+    studentId2 INT(7),
+	questionId2 INT(7),
+    answerId2 INT(7),
+	dateEntered TIMESTAMP,
 	PRIMARY KEY (screenerId)
 );

@@ -3,8 +3,8 @@ USE sigmagam_emotionscount;
 CREATE TABLE answers
 (
 	answerId INT AUTO_INCREMENT NOT NULL,
-	answer INT NOT NULL,
-	description VARCHAR(50),
+	answer INT,
+	description TEXT,
 	PRIMARY KEY (answerId)
 );
 

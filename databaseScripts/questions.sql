@@ -4,7 +4,7 @@ CREATE TABLE questions (
 questionId INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 question VARCHAR(200),
 category VARCHAR(50),
-type_question VARCHAR(50)
+type_question TEXT
 );
 
 
